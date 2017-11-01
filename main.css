@@ -1,0 +1,48 @@
+body {}
+
+header {
+  position: fixed;
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+  background-color: #6C849C;
+}
+
+nav {
+  display: flex;
+  /*width: 100%;*/
+  padding: 0.5rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding-left: 0;
+  text-align: left;
+  max-width: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #56595C;
+}
+
+.hero {
+  min-height: 30vh;
+  background-image: url("http://space.airbus.com/wp-content/uploads/2016/09/earth-view-from-satellite-space-systems-cover.jpg");
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+main nav {}
+
+article {
+  margin: 1rem 8rem 3rem 8rem;
+}
