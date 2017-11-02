@@ -1,51 +1,202 @@
-body {}
+@import url( 'https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
 
 header {
   position: fixed;
-  margin-top: 1rem;
+  margin-top: 3rem;
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-flow: row nowrap;
-  background-color: #6C849C;
+  background: #6C849C;
+  opacity: 0.75;
+}
+
+footer {
+  margin-top: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+  background: #6C849C;
+  opacity: 0.75;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
 }
 
 nav {
   display: flex;
-  /*width: 100%;*/
-  padding: 0.5rem;
+  justify-content: space-between;
+  width: 100%;
 }
 
 nav ul {
-  display: flex;
   list-style-type: none;
   margin: 0 auto;
-  padding-left: 0;
-  text-align: left;
-  max-width: 100%;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-left: 1rem;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #56595C;
+  color: black;
+}
+
+.earth-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50rem;
+  text-decoration: none;
+  margin-left: 2rem;
+  margin-top: 0.25rem;
+}
+
+footer .earth-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50rem;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+.profile-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50rem;
+  text-decoration: none;
+  margin-right: 2rem;
+  margin-top: 0.25rem;
+}
+
+footer .profile-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50rem;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+
+small {
+  padding-top: 1rem;
+  font-size: 15px;
+  font-style: italic;
 }
 
 .hero {
   position: fixed;
   width: 100%;
-  min-height: 30vh;
+  min-height: 50vh;
   background-image: url("http://space.airbus.com/wp-content/uploads/2016/09/earth-view-from-satellite-space-systems-cover.jpg");
   background-size: 100% 100%;
   z-index: -1;
 }
 
-main nav {}
+main nav ul {
+  margin-top: 5.6rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+main nav ul li {
+  text-align: center;
+  margin: 15.5rem 6rem 2rem;
+  border-radius: 50rem;
+  padding: 2rem;
+  background-image: url("http://pngimg.com/uploads/moon/moon_PNG46.png");
+  background-size: cover;
+  opacity: 0.85;
+  height: 5rem;
+  width: 5rem;
+  box-shadow: 0.75rem 0.75rem 1rem black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.blog-dates {
+  position: fixed;
+  right: 0;
+  margin-top: 26.5rem;
+  margin-right: 1.05rem;
+  background: #6C849C;
+  padding: 0.5rem;
+  border-radius: 1.7rem;
+  opacity: 0.75;
+  text-align: center;
+  box-shadow: 0.50rem 0.50rem 1rem black;
+  font-weight: bold;
+}
+
+.blog-dates ul {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  background: white;
+  border-radius: 1.25rem;
+  padding: 0.75rem;
+}
+
+.blog-dates ul li {
+  margin-bottom: 0.25rem;
+}
+
+.blog-dates ul li:last-child {
+  margin-bottom: 0;
+}
+
+.greeting {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 4rem;
+  opacity: 0.75;
+}
 
 article {
-  margin: 1rem 8rem 3rem 8rem;
+  margin: 1rem 8rem 3rem;
+  background: #6C849C;
+  padding: 2rem;
+  border-radius: 5rem;
+  opacity: 0.75;
+  text-align: justify;
+  box-shadow: 0.75rem 0.75rem 1rem black;
+}
+
+article h2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+article h3 {
+  font-weight: bold;
+  font-size: 23px;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+article p {
+  font-size: 18px;
+  line-height: 1.5rem;
+}
+
+article section {
+  background: white;
+  border-radius: 4rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+article section:last-child {
+  margin-bottom: 0;
+}
+
+.goal-setting ol {
+  counter-reset: li;
 }
