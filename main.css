@@ -53,6 +53,10 @@ header nav ul li a {
   color: black;
 }
 
+.to-top {
+  text-decoration: underline;
+}
+
 .earth-icon {
   height: 2.5rem;
   width: 2.5rem;
@@ -100,6 +104,8 @@ small {
   background-image: url("http://space.airbus.com/wp-content/uploads/2016/09/earth-view-from-satellite-space-systems-cover.jpg");
   background-size: 100% 100%;
   z-index: -1;
+  border-bottom: solid #6C849C;
+  border-width: 0.75rem;
 }
 
 main nav ul {
@@ -113,14 +119,14 @@ main nav ul li {
   margin: 21.3rem 4rem 2rem;
   border-radius: 50rem;
   padding: 2rem;
-  background-image: url("http://pngimg.com/uploads/moon/moon_PNG46.png");
+  background-image: url("http://img6.laughinggif.com/pic/HTTPS91c2Vyc2NvbnRlbnQyLmVtYXplLmNvbS9pbWFnZXMvOTZiMTVlOTMtOWFmOS00NmM4LWEwZTAtM2EyOWQxNDE0MDBkL2VkMTJlN2Q4LTE5ODMtNDA4YS04MGVjLTYxNTc0NWUzZTExZS5naWYlog.gif");
   background-size: cover;
-  opacity: 0.85;
   height: 5rem;
   width: 5rem;
   box-shadow: 0.75rem 0.75rem 1rem black;
   font-size: 20px;
   font-weight: bold;
+
 }
 
 main nav ul li a {
@@ -131,7 +137,7 @@ main nav ul li a {
 .blog-dates {
   position: fixed;
   right: 0;
-  margin-top: 26.5rem;
+  margin-top: 27.5rem;
   margin-right: 0.60rem;
   background: #6C849C;
   padding: 0.5rem;
@@ -177,7 +183,6 @@ article {
   background: #6C849C;
   padding: 2rem;
   border-radius: 5rem;
-  opacity: 0.75;
   text-align: justify;
   box-shadow: 0.75rem 0.75rem 1rem black;
 }
@@ -207,6 +212,7 @@ article section {
   border-radius: 4rem;
   padding: 2rem;
   margin-bottom: 2rem;
+  opacity: 0.75;
 }
 
 article section:last-child {
@@ -230,4 +236,19 @@ article section:last-child {
 .blog-list li {
   margin-bottom: 1rem;
   font-size: 18px;
+  line-height: 1.5rem;
+}
+
+.aboutme p {
+  margin-bottom: 0.75rem;
+}
+
+.aboutme-pic {
+  border-radius: 5rem;
+  height: 17rem;
+  width: auto;
+  border: solid #6C849C;
+  border-width: 0.75rem;
+  float: left;
+  margin-right: 1rem;
 }
