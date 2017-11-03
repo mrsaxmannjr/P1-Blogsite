@@ -13,6 +13,7 @@ header {
   flex-flow: row nowrap;
   background: #6C849C;
   opacity: 0.75;
+  padding: 0.5rem;
 }
 
 footer {
@@ -23,6 +24,7 @@ footer {
   flex-flow: row nowrap;
   background: #6C849C;
   opacity: 0.75;
+  padding: 0.5rem;
 }
 
 h1 {
@@ -30,18 +32,23 @@ h1 {
   font-weight: bold;
 }
 
-nav {
+footer nav,
+header nav {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 95%;
+  background: white;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0 auto;
+header nav ul {
+  background: white;
+  border-radius: 1.25rem;
+  padding: 0.75rem;
 }
 
-nav ul li a {
+header nav ul li a {
   text-decoration: none;
   color: black;
 }
@@ -96,7 +103,6 @@ small {
 }
 
 main nav ul {
-  margin-top: 5.6rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -104,7 +110,7 @@ main nav ul {
 
 main nav ul li {
   text-align: center;
-  margin: 15.5rem 6rem 2rem;
+  margin: 21.3rem 4rem 2rem;
   border-radius: 50rem;
   padding: 2rem;
   background-image: url("http://pngimg.com/uploads/moon/moon_PNG46.png");
@@ -117,11 +123,16 @@ main nav ul li {
   font-weight: bold;
 }
 
+main nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
 .blog-dates {
   position: fixed;
   right: 0;
   margin-top: 26.5rem;
-  margin-right: 1.05rem;
+  margin-right: 0.60rem;
   background: #6C849C;
   padding: 0.5rem;
   border-radius: 1.7rem;
@@ -147,6 +158,11 @@ main nav ul li {
 
 .blog-dates ul li:last-child {
   margin-bottom: 0;
+}
+
+.blog-dates ul li a {
+  text-decoration: none;
+  color: black;
 }
 
 .greeting {
@@ -197,6 +213,21 @@ article section:last-child {
   margin-bottom: 0;
 }
 
-.goal-setting ol {
-  counter-reset: li;
+.blog-post p {
+  margin-bottom: 0.75rem;
+}
+
+.setup {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.blog-list {
+  list-style: circle;
+  margin-left: 2rem;
+}
+
+.blog-list li {
+  margin-bottom: 1rem;
+  font-size: 18px;
 }
